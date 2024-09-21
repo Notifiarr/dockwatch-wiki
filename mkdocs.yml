@@ -1,0 +1,76 @@
+site_name: Dockwatch Wiki
+site_author: nitsua
+site_description: Simple UI driven way to manage updates & notifications for Docker containers.
+site_url: http://rm-web-1:8005/en/latest/
+repo_name: dockwatch
+repo_url: https://github.com/Notifiarr/dockwatch
+
+nav:
+  - Dockwatch:
+    - About: index.md
+    - UI:
+      - Overview: pages/overview/index.md
+      - Containers:
+        - Table: pages/containers/table.md
+        - Groups: pages/containers/groups.md
+        - Updates: pages/containers/updates.md
+      - Compose: pages/compose/index.md
+      - Orphans: pages/orphans/index.md
+      - Notifications:
+        - Notifiarr: pages/notifications/notifiarr.md
+        - Telegram: pages/notifications/telegram.md
+      - Settings: 
+        - General: pages/settings/general.md
+        - Logins: pages/settings/logins.md
+        - Servers: pages/settings/servers.md
+        - Containers: pages/settings/contianers.md
+        - Prune: pages/settings/prune.md
+        - Thresholds: pages/settings/thresholds.md
+        - SSE: pages/settings/sse.md
+        - Logging: pages/settings/logging.md
+        - Development: pages/settings/development.md
+      - Tasks:
+        - Crons: pages/tasks/crons.md
+        - Files: pages/tasks/files.md
+      - Commands:  pages/commands/index.md
+      - Logs: pages/logs/index.md
+  - Misc:
+    - Run: pages/misc/run.md
+    - Compose: pages/misc/compose.md
+    - Proxy: pages/misc/proxy.md
+    - Images: pages/misc/images.md
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  language: en
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - content.code.copy
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
