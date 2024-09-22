@@ -42,7 +42,7 @@ Updates are applied on a container by container basis and use cron scheduling fo
 
 ## Other features
 
-- Link and control multiple dockwatch installs (other servers)
+- Link and control multiple Dockwatch installs (other servers)
 - Automatically locate and match container icons for non Unraid usage*
 - Update schedules for container image tags by a container basis
 - Notifications by a container basis

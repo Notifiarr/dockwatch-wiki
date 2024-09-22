@@ -6,7 +6,7 @@
 ## Permissions
 
 !!! info
-    Dockwatch needs to be able to run docker based commands in order to function so this is important, alternative to dockwatch using the docker.sock is if you use a [Socket proxy](/pages/misc/proxy)
+    Dockwatch needs to be able to run docker based commands in order to function so this is important, alternative to Dockwatch using the docker.sock is if you use a [Socket proxy](/pages/misc/proxy)
 
 Get the group id that docker uses with the following command
 
