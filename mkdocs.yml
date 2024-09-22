@@ -34,11 +34,13 @@ nav:
         - Files: pages/tasks/files.md
       - Commands:  pages/commands/index.md
       - Logs: pages/logs/index.md
+  - Compose/Run: pages/misc/composeRun.md
+  - Dependencies: pages/misc/dependencies.md
+  - Socket proxy: pages/misc/proxy.md
+  - Swarm: pages/misc/swarm.md
   - Misc:
-    - Run: pages/misc/run.md
-    - Compose: pages/misc/compose.md
-    - Proxy: pages/misc/proxy.md
     - Images: pages/misc/images.md
+  - Contributing: pages/misc/contributing.md
 
 theme:
   name: material
@@ -74,3 +76,8 @@ theme:
       toggle:
         icon: material/weather-night
         name: Dark mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
