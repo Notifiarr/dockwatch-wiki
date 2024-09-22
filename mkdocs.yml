@@ -4,6 +4,8 @@ site_description: Simple UI driven way to manage updates & notifications for Doc
 site_url: http://rm-web-1:8005/en/latest/
 repo_name: dockwatch
 repo_url: https://github.com/Notifiarr/dockwatch
+repo_wiki_name: dockwatch-wiki
+repo_wiki_url: https://github.com/Notifiarr/dockwatch-wiki
 
 nav:
   - Dockwatch:
@@ -46,6 +48,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
   language: en
