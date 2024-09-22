@@ -34,6 +34,8 @@ nav:
         - Files: pages/tasks/files.md
       - Commands:  pages/commands/index.md
       - Logs: pages/logs/index.md
+  - Requirements: pages/misc/requirements.md
+  - Logins: pages/misc/logins.md
   - Compose/Run: pages/misc/composeRun.md
   - Dependencies: pages/misc/dependencies.md
   - Socket proxy: pages/misc/proxy.md
