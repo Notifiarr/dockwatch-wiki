@@ -25,7 +25,7 @@ nav:
         - General: pages/settings/general.md
         - Logins: pages/settings/logins.md
         - Servers: pages/settings/servers.md
-        - Containers: pages/settings/contianers.md
+        - Containers: pages/settings/containers.md
         - Prune: pages/settings/prune.md
         - Thresholds: pages/settings/thresholds.md
         - SSE: pages/settings/sse.md
@@ -84,3 +84,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
