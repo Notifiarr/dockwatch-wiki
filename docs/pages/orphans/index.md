@@ -7,7 +7,7 @@ The orphans page will show you everything docker consideres orphaned and not in 
 
 These are images that docker says should be able to be deleted safely. The command that fetches this list is also on the page so it can be run manually in your shell for verification
 
-!!! example "Network command"
+!!! example "Image command"
     ```
     docker images -f dangling=true
     ```
@@ -16,7 +16,7 @@ These are images that docker says should be able to be deleted safely. The comma
 
 These are volumes that are no longer in use. Docker does not provide the actual paths where these volumes once pointed to so all that is available is the internal docker hash for the orphaned volume and the internal docker mount hash.
 
-!!! example "Network command"
+!!! example "Volume command"
     ```
     docker volume ls -qf dangling=true
     ```

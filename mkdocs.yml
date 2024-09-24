@@ -31,9 +31,7 @@ nav:
         - SSE: pages/settings/sse.md
         - Logging: pages/settings/logging.md
         - Development: pages/settings/development.md
-      - Tasks:
-        - Crons: pages/tasks/crons.md
-        - Files: pages/tasks/files.md
+      - Tasks: pages/tasks/index.md
       - Commands:  pages/commands/index.md
       - Logs: pages/logs/index.md
   - Requirements: pages/misc/requirements.md
