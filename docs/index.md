@@ -16,6 +16,14 @@ Support:<br>
 
 Simple UI driven way to manage updates & notifications for Docker containers. No external database is required, all settings are stored locally in an sqlite3 database.
 
+## Project support
+
+If the project is useful for you, do us a favor and smash that star button on the [Github](https://github.com/Notifiarr/dockwatch){:target="_blank"} page! If you want to support the project financially we do appreciate it and you can do that on the [Notifiarr Github](https://github.com/sponsors/Notifiarr){:target="_blank"} sponsor page. Added bonus with that is if you also use [Notifiarr](https://notifiarr.com){:target="_blank"} you can link your Github account and get patron perks there too!
+
+## Features or bugs
+
+If there is a feature you would like added or think you have found a bug, please join the discord and lets discuss it there in real time before doing a Github request. After we determine what to do (add a new feature or confirm the bug) we can move it to Github if necessary although most things can be fixed fast enough that it wont be needed.
+
 ## Notifications
 
 ### Triggers
