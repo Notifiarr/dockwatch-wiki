@@ -1,89 +1,85 @@
 ## API usage
 
 !!! warning
-
--   Very experimental and some things may change in the future - Only a few important endpoints are documented for now.
--   If you need any more added, please join the Discord and let us know!
+    - Very experimental and some things may change in the future - Only a few important endpoints are documented for now.
+    - If you need any more added, please join the Discord and let us know!
 
 ### Base URL
 
-<code>http://{instance}/api</code>
+`http://{instance}/api`
 
--   Replace `{instance}` with your instance domain or `ip:port`
+- Replace `{instance}` with your instance domain or `ip:port`
 
 ### Endpoints
 
-??? example "server-ping"
+#### server-ping
 
-##### server-ping
+!!! example "Usage"
+    === "Parameters"
 
-=== "Parameters"
+        | name      | type     | data type | description      |
+        | --------- | -------- | --------- | ---------------- |
+        | `request` | required | string    | endpoint name    |
+        | `apikey`  | required | string    | instance api key |
 
-    | name      | type     | data type | description      |
-    | --------- | -------- | --------- | ---------------- |
-    | `request` | required | string    | endpoint name    |
-    | `apikey`  | required | string    | instance api key |
+    === "Responses"
 
-=== "Responses"
+        | http code | content-type       | response                                         |
+        | --------- | ------------------ | ------------------------------------------------ |
+        | `200`     | `application/json` | `{"code":"200","response":{"result":"v7.2.7"}}`  |
+        | `423`     | `application/json` | `{"code":"423","error":"Migration in progress"}` |
 
-    | http code | content-type       | response                                         |
-    | --------- | ------------------ | ------------------------------------------------ |
-    | `200`     | `application/json` | `{"code":"200","response":{"result":"v7.2.7"}}`  |
-    | `423`     | `application/json` | `{"code":"423","error":"Migration in progress"}` |
+    === "Example cURL"
 
-=== "Example cURL"
+        ```javascript
+        curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=server-ping&apikey=<redacted>
+        ```
 
-    ```javascript
-    curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=server-ping&apikey=<redacted>
-    ```
+#### stats-getContainersList
 
-??? example "stats-getContainersList"
+!!! example "Usage"
+    === "Parameters"
 
-##### stats-getContainersList
+        | name      | type     | data type | description      |
+        | --------- | -------- | --------- | ---------------- |
+        | `request` | required | string    | endpoint name    |
+        | `apikey`  | required | string    | instance api key |
 
-=== "Parameters"
+    === "Responses"
 
-    | name      | type     | data type | description      |
-    | --------- | -------- | --------- | ---------------- |
-    | `request` | required | string    | endpoint name    |
-    | `apikey`  | required | string    | instance api key |
+        | http code | content-type       | response                                                                                          |
+        | --------- | ------------------ | ------------------------------------------------------------------------------------------------- |
+        | `200`     | `application/json` | [JSON](https://logs.notifiarr.com/?18b34487e18d801f#6ua883qJ6U6wPF6pAPyYCpZRp7P9cgwR75aGfPAtaz7c){:target="_blank"} |
 
-=== "Responses"
+    === "Example cURL"
 
-    | http code | content-type       | response                                                                                          |
-    | --------- | ------------------ | ------------------------------------------------------------------------------------------------- |
-    | `200`     | `application/json` | [JSON](https://logs.notifiarr.com/?18b34487e18d801f#6ua883qJ6U6wPF6pAPyYCpZRp7P9cgwR75aGfPAtaz7c){:target="_blank"} |
+        ```javascript
+        curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=stats-getContainersList&apikey=<redacted>
+        ```
 
-=== "Example cURL"
+#### stats-getOverview
 
-    ```javascript
-    curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=stats-getContainersList&apikey=<redacted>
-    ```
+!!! example "Usage"
+    === "Parameters"
 
-??? example "stats-getOverview"
+        | name      | type     | data type | description      |
+        | --------- | -------- | --------- | ---------------- |
+        | `request` | required | string    | endpoint name    |
+        | `apikey`  | required | string    | instance api key |
 
-##### stats-getOverview
+    === "Responses"
 
-=== "Parameters"
+        | http code | content-type       | response                                                                                          |
+        | --------- | ------------------ | ------------------------------------------------------------------------------------------------- |
+        | `200`     | `application/json` | [JSON](https://logs.notifiarr.com/?c528e47b85d6beb4#CNGLgF5sbfWRUPuQ3UkPvWeRfJHP8dtJfn1HbZg4QoDH){:target="_blank"} |
 
-    | name      | type     | data type | description      |
-    | --------- | -------- | --------- | ---------------- |
-    | `request` | required | string    | endpoint name    |
-    | `apikey`  | required | string    | instance api key |
+        Usage values:
 
-=== "Responses"
+        - `disk` and `netIO` = bytes
+        - `cpu` and `memory` = percentage
 
-    | http code | content-type       | response                                                                                          |
-    | --------- | ------------------ | ------------------------------------------------------------------------------------------------- |
-    | `200`     | `application/json` | [JSON](https://logs.notifiarr.com/?c528e47b85d6beb4#CNGLgF5sbfWRUPuQ3UkPvWeRfJHP8dtJfn1HbZg4QoDH){:target="_blank"} |
+    === "Example cURL"
 
-    Usage values:
-
-    - `disk` and `netIO` = bytes
-    - `cpu` and `memory` = percentage
-
-=== "Example cURL"
-
-    ```javascript
-    curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=stats-getOverview&apikey=<redacted>
-    ```
+        ```javascript
+        curl -X GET -H "Content-Type: application/json" http://{instance}/api/?request=stats-getOverview&apikey=<redacted>
+        ```
