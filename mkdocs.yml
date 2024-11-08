@@ -41,6 +41,7 @@ nav:
   - Dependencies: pages/misc/dependencies.md
   - Socket proxy: pages/misc/proxy.md
   - Swarm: pages/misc/swarm.md
+  - API: pages/misc/api.md
   - Misc:
     - Images: pages/misc/images.md
   - Contributing: pages/misc/contributing.md
