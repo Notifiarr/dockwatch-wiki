@@ -306,7 +306,7 @@ Error example:
         | ----- | ----- | ----- |
         | `newSettings` | object | yes |
 
-## /api/docker/* - 23
+## /api/docker/* - 24
 
 ### <span style="display:none;">container/create</span>
 
@@ -324,6 +324,16 @@ Error example:
     Endpoint: `/api/docker/container/inspect`<br>
     Usage: Return information about a container
     === "GET"
+        | Parameter | Type | Required |
+        | ----- | ----- | ----- |
+        | `name` | str | yes |
+
+### <span style="display:none;">container/kill</span>
+
+??? abstract "container/kill"
+    Endpoint: `/api/docker/container/kill`<br>
+    Usage: Kill a container
+    === "POST"
         | Parameter | Type | Required |
         | ----- | ----- | ----- |
         | `name` | str | yes |
