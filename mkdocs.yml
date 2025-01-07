@@ -34,7 +34,6 @@ nav:
       - Tasks: pages/tasks/index.md
       - Commands:  pages/commands/index.md
       - Logs: pages/logs/index.md
-    - API: pages/api/index.md
   - Requirements: pages/misc/requirements.md
   - Logins: pages/misc/logins.md
   - Compose/Run: pages/misc/composeRun.md
