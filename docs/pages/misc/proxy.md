@@ -20,4 +20,4 @@ You need to enable the following (possibly more based on the version, future add
     - VOLUMES=1
 ```
 
-You also need to make sure and use the `DOCKER_HOST` variable (--env or compose environment) with the example value `http://socket-proxy:2375` (this points to your socket-proxy container)
+You also need to make sure and use the `DOCKER_HOST` variable (--env or compose environment) with the example value `tcp://socket-proxy:2375` (this points to your socket-proxy container)
