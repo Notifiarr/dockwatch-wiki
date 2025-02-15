@@ -37,6 +37,7 @@ If there is a feature you would like added or think you have found a bug, please
 
 ### Platforms
 
+- Mattermost
 - Notifiarr
 - Telegram
 
@@ -70,8 +71,12 @@ Updates are applied on a container by container basis and use cron scheduling fo
 
 ### Interface
 
+![Servers](assets/screenshots/interface/servers.png)
 ![Overview](assets/screenshots/interface/overview.png)
-![Container](assets/screenshots/interface/containers.png)
+![Containers](assets/screenshots/interface/containers.png)
+![Container](assets/screenshots/interface/container.png)
+![Networks](assets/screenshots/interface/networks.png)
+![Compose](assets/screenshots/interface/compose.png)
 ![Orphans](assets/screenshots/interface/orphans.png)
 ![Notifications](assets/screenshots/interface/notifications.png)
 ![Settings](assets/screenshots/interface/settings.png)

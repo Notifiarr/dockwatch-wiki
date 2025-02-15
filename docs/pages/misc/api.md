@@ -615,7 +615,7 @@ Error example:
         | `linkId` | int | yes |
         | `name` | str | yes |
 
-## /api/server/* - 5
+## /api/server/* - 6
 
 ### <span style="display:none;">log</span>
 
@@ -664,6 +664,14 @@ Error example:
         | Parameter | Type | Required |
         | ----- | ----- | ----- |
         | `task` | str | yes |
+
+### <span style="display:none;">time</span>
+
+??? abstract "time"
+    Endpoint: `/api/server/time`<br>
+    Usage: Check the instance timezone and current time
+    === "GET"
+        No parameters
 
 ## /api/stats/* - 2
 
