@@ -24,7 +24,7 @@ If the project is useful for you, do us a favor and smash that star button on th
 
 If there is a feature you would like added or think you have found a bug, please join the discord and lets discuss it there in real time before doing a Github request. After we determine what to do (add a new feature or confirm the bug) we can move it to Github if necessary although most things can be fixed fast enough that it wont be needed.
 
-## Notifications
+## Notification options
 
 ### Triggers
 
@@ -66,22 +66,60 @@ Updates are applied on a container by container basis and use cron scheduling fo
 ## Screenshots
 
 !!! note
-
     These might differ slightly from time to time as the UI can change faster than the wiki might be updated.
 
 ### Interface
 
+#### Servers
+
 ![Servers](assets/screenshots/interface/servers.png)
+
+#### Overview
+
 ![Overview](assets/screenshots/interface/overview.png)
+
+#### Containers
+
 ![Containers](assets/screenshots/interface/containers.png)
+
+#### Container
+
 ![Container](assets/screenshots/interface/container.png)
+
+#### Container compose
+
+![ContainerCompose](assets/screenshots/interface/generate-compose.png)
+
+#### Networks
+
 ![Networks](assets/screenshots/interface/networks.png)
+
+#### Compose
+
 ![Compose](assets/screenshots/interface/compose.png)
+
+#### Orphans
+
 ![Orphans](assets/screenshots/interface/orphans.png)
+
+#### Notifications
+
 ![Notifications](assets/screenshots/interface/notifications.png)
+
+#### Settings
+
 ![Settings](assets/screenshots/interface/settings.png)
+
+#### Tasks
+
 ![Tasks](assets/screenshots/interface/tasks.png)
+
+#### Commands
+
 ![Commands](assets/screenshots/interface/commands.png)
+
+#### Logs
+
 ![Logs](assets/screenshots/interface/logs.png)
 
 ### Notifiarr notifications

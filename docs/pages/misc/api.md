@@ -3,9 +3,10 @@
 Header `X-Api-Key:{apikey}`<br>
 Parameter `?apikey={apikey}`
 
-!!! example
+!!! example "Examples"
     ```
     curl -H "X-Api-Key:{apikey}" "http://{host}:9999/api/database/containers"
+    curl "http://{host}:9999/api/database/containers?apikey={apikey}"
     ```
 
 ## Responses
@@ -673,20 +674,29 @@ Error example:
     === "GET"
         No parameters
 
-## /api/stats/* - 2
+## /api/stats/* - 3
 
 ### <span style="display:none;">containers</span>
 
 ??? abstract "containers"
     Endpoint: `/api/stats/containers`<br>
-    Usage: Returns the container list used by dashboard apps
+    Usage: Returns the container list to be used by dashboard apps
     === "GET"
         No parameters
+
+### <span style="display:none;">metrics</span>
+
+??? abstract "metrics"
+    Endpoint: `/api/stats/metrics`<br>
+    Usage: Returns the metrics to be used by dashboard apps
+    === "GET"
+        No parameters
+
 
 ### <span style="display:none;">overview</span>
 
 ??? abstract "overview"
     Endpoint: `/api/stats/overview`<br>
-    Usage: Returns the overview list used by dashboard apps
+    Usage: Returns the overview list to be used by dashboard apps
     === "GET"
         No parameters
