@@ -47,7 +47,7 @@ nav:
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
   language: en
@@ -55,6 +55,7 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - content.code.copy
+    - content.tooltips
     - header.autohide
     - announce.dismiss
     - navigation.footer
@@ -63,29 +64,54 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - navigation.instant
     - toc.follow
     - search.suggest
     - search.highlight
     - search.share
+
   palette:
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: custom
       toggle:
         icon: material/weather-sunny
         name: Light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       primary: custom
       toggle:
         icon: material/weather-night
         name: Dark mode
 
+extra_css:
+  - stylesheets/github-permalink-style.css
+
+plugins:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+  - search
+
 markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - tables
   - pymdownx.tabbed:
       alternate_style: true
-  - attr_list
   - md_in_html
+  - toc:
+      toc_depth: 4
+      permalink: ''
