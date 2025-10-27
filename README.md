@@ -1,6 +1,7 @@
-# mkdocs-wiki
+# dockwatch-wiki
 
-[Dockwatch wiki](https://dockwatch.wiki) source.
+[Dockwatch wiki](https://dockwatch.wiki) source.  
+Based on [Notifiarr/mkdocs-wiki](https://github.com/Notifiarr/mkdocs-wiki).
 
 ## Local Build
 
@@ -19,7 +20,7 @@ mkdocs serve
 ```
 winget install Python.Python.3.14
 python3 -m venv .venv
-call venv\Scripts\activate
+call .venv\Scripts\activate
 python3 -m pip install -r requirements.txt
 mkdocs serve
 ```
