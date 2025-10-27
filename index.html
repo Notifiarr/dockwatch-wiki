@@ -1,12 +1,9 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Simple UI driven way to manage updates & notifications for Docker containers.">
+        <meta name="description" content="Simple UI driven way to manage updates &amp; notifications for Docker containers.">
       
       
         <meta name="author" content="nitsua">
@@ -45,10 +42,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="stylesheets/github-permalink-style.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -57,7 +56,17 @@
     
     
     
-  </head>
+  <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -76,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#purpose" class="md-skip">
+        <a href="#github" class="md-skip">
           Skip to content
         </a>
       
@@ -116,19 +125,10 @@
 
 <!-- Header -->
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav
-    class="md-header__inner md-grid"
-    aria-label="Header"
-  >
+  <nav class="md-header__inner md-grid" aria-label="Header">
 
     <!-- Link to home -->
-    <a
-      href="."
-      title="Dockwatch Wiki"
-      class="md-header__button md-logo"
-      aria-label="Dockwatch Wiki"
-      data-md-component="logo"
-    >
+    <a href="." title="Dockwatch Wiki" class="md-header__button md-logo" aria-label="Dockwatch Wiki" data-md-component="logo">
       
   <img src="assets/logo.png" alt="logo">
 
@@ -137,7 +137,7 @@
     <!-- Button to open drawer -->
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
 
     <!-- Header title -->
@@ -166,20 +166,20 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Light mode" type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
       </label>
     
   
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Dark mode" type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
       </label>
     
   
@@ -199,7 +199,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
       </label>
 
       <!-- Search interface -->
@@ -210,20 +210,20 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
           <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
             
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
           </a>
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -271,15 +271,10 @@
 
 <!-- Repository information -->
 <div style="width: 7rem; display: inline-block;">
-    <a
-    href="https://github.com/Notifiarr/dockwatch"
-    title="Go to repository"
-    class="md-source"
-    data-md-component="source"
-    >
+    <a href="https://github.com/Notifiarr/dockwatch" title="Go to repository" class="md-source" data-md-component="source">
     <div class="md-source__icon md-icon">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
     </div>
     <div class="md-source__repository">
         dockwatch
@@ -287,14 +282,10 @@
     </a>
 </div>
 <div style="width: 7rem; display: inline-block;">
-    <a
-    href="https://github.com/Notifiarr/dockwatch-wiki"
-    title="Go to repository"
-    class="md-source"
-  >
+    <a href="https://github.com/Notifiarr/dockwatch-wiki" title="Go to repository" class="md-source">
     <div class="md-source__icon md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
     </div>
     <div style="display: inline-block; vertical-align: middle;">
       dockwatch-wiki
@@ -525,7 +516,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -569,15 +560,10 @@
 
 <!-- Repository information -->
 <div style="width: 7rem; display: inline-block;">
-    <a
-    href="https://github.com/Notifiarr/dockwatch"
-    title="Go to repository"
-    class="md-source"
-    data-md-component="source"
-    >
+    <a href="https://github.com/Notifiarr/dockwatch" title="Go to repository" class="md-source" data-md-component="source">
     <div class="md-source__icon md-icon">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
     </div>
     <div class="md-source__repository">
         dockwatch
@@ -585,14 +571,10 @@
     </a>
 </div>
 <div style="width: 7rem; display: inline-block;">
-    <a
-    href="https://github.com/Notifiarr/dockwatch-wiki"
-    title="Go to repository"
-    class="md-source"
-  >
+    <a href="https://github.com/Notifiarr/dockwatch-wiki" title="Go to repository" class="md-source">
     <div class="md-source__icon md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
     </div>
     <div style="display: inline-block; vertical-align: middle;">
       dockwatch-wiki
@@ -704,246 +686,309 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#github">
+    <span class="md-ellipsis"> GitHub </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#project-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project support
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#support">
+    <span class="md-ellipsis"> Support </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#features-or-bugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features or bugs
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#purpose">
+    <span class="md-ellipsis"> Purpose </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notification-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notification options
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#project-support">
+    <span class="md-ellipsis"> Project support </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Notification options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#triggers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Triggers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platforms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platforms
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#updating-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating options
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#features-or-bugs">
+    <span class="md-ellipsis"> Features or bugs </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#other-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other features
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notification-options">
+    <span class="md-ellipsis"> Notification options </span>
   </a>
+
+  <!-- Table of contents list -->
+  
+  <nav class="md-nav" aria-label="Notification options">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#triggers">
+    <span class="md-ellipsis"> Triggers </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#platforms">
+    <span class="md-ellipsis"> Platforms </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Screenshots
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#updating-options">
+    <span class="md-ellipsis"> Updating options </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Screenshots">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#servers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servers
-    </span>
-  </a>
+
+  <!-- Table of contents list -->
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#other-features">
+    <span class="md-ellipsis"> Other features </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#containers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers
-    </span>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#screenshots">
+    <span class="md-ellipsis"> Screenshots </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container
-    </span>
+  <nav class="md-nav" aria-label="Screenshots">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#interface">
+    <span class="md-ellipsis"> Interface </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container compose
-    </span>
+  <nav class="md-nav" aria-label="Interface">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#servers">
+    <span class="md-ellipsis"> Servers </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#networks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Networks
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#overview">
+    <span class="md-ellipsis"> Overview </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compose
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#containers">
+    <span class="md-ellipsis"> Containers </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orphans" class="md-nav__link">
-    <span class="md-ellipsis">
-      Orphans
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#container">
+    <span class="md-ellipsis"> Container </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#container-compose">
+    <span class="md-ellipsis"> Container compose </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Settings
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#networks">
+    <span class="md-ellipsis"> Networks </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tasks
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#compose">
+    <span class="md-ellipsis"> Compose </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#orphans">
+    <span class="md-ellipsis"> Orphans </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logs
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notifications">
+    <span class="md-ellipsis"> Notifications </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notifiarr-notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notifiarr notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#settings">
+    <span class="md-ellipsis"> Settings </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#telegram-notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Telegram notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#tasks">
+    <span class="md-ellipsis"> Tasks </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-      </ul>
-    </nav>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#commands">
+    <span class="md-ellipsis"> Commands </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#logs">
+    <span class="md-ellipsis"> Logs </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notifiarr-notifications">
+    <span class="md-ellipsis"> Notifiarr notifications </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#telegram-notifications">
+    <span class="md-ellipsis"> Telegram notifications </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
   
 </li>
       
@@ -979,7 +1024,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2">
         
           
           <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
@@ -1045,7 +1090,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_2">
         
           
           <label class="md-nav__link" for="__nav_1_2_2" id="__nav_1_2_2_label" tabindex="0">
@@ -1211,7 +1256,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_5">
         
           
           <label class="md-nav__link" for="__nav_1_2_5" id="__nav_1_2_5_label" tabindex="0">
@@ -1308,7 +1353,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_6">
         
           
           <label class="md-nav__link" for="__nav_1_2_6" id="__nav_1_2_6_label" tabindex="0">
@@ -1804,7 +1849,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9">
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1887,7 +1932,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1903,246 +1948,309 @@
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
-        <li class="md-nav__item">
-  <a href="#purpose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Purpose
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#github">
+    <span class="md-ellipsis"> GitHub </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#project-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project support
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#support">
+    <span class="md-ellipsis"> Support </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#features-or-bugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features or bugs
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#purpose">
+    <span class="md-ellipsis"> Purpose </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#notification-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notification options
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#project-support">
+    <span class="md-ellipsis"> Project support </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Notification options">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#triggers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Triggers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#platforms" class="md-nav__link">
-    <span class="md-ellipsis">
-      Platforms
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#updating-options" class="md-nav__link">
-    <span class="md-ellipsis">
-      Updating options
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#features-or-bugs">
+    <span class="md-ellipsis"> Features or bugs </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#other-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Other features
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notification-options">
+    <span class="md-ellipsis"> Notification options </span>
   </a>
+
+  <!-- Table of contents list -->
+  
+  <nav class="md-nav" aria-label="Notification options">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#triggers">
+    <span class="md-ellipsis"> Triggers </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#platforms">
+    <span class="md-ellipsis"> Platforms </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Screenshots
-    </span>
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#updating-options">
+    <span class="md-ellipsis"> Updating options </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Screenshots">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interface" class="md-nav__link">
-    <span class="md-ellipsis">
-      Interface
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Interface">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#servers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Servers
-    </span>
-  </a>
+
+  <!-- Table of contents list -->
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#other-features">
+    <span class="md-ellipsis"> Other features </span>
   </a>
+
+  <!-- Table of contents list -->
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#containers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Containers
-    </span>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#screenshots">
+    <span class="md-ellipsis"> Screenshots </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container
-    </span>
+  <nav class="md-nav" aria-label="Screenshots">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#interface">
+    <span class="md-ellipsis"> Interface </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#container-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Container compose
-    </span>
+  <nav class="md-nav" aria-label="Interface">
+    <ul class="md-nav__list">
+       <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#servers">
+    <span class="md-ellipsis"> Servers </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#networks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Networks
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#overview">
+    <span class="md-ellipsis"> Overview </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compose
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#containers">
+    <span class="md-ellipsis"> Containers </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#orphans" class="md-nav__link">
-    <span class="md-ellipsis">
-      Orphans
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#container">
+    <span class="md-ellipsis"> Container </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#container-compose">
+    <span class="md-ellipsis"> Container compose </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Settings
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#networks">
+    <span class="md-ellipsis"> Networks </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tasks
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#compose">
+    <span class="md-ellipsis"> Compose </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#orphans">
+    <span class="md-ellipsis"> Orphans </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Logs
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notifications">
+    <span class="md-ellipsis"> Notifications </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#notifiarr-notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notifiarr notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#settings">
+    <span class="md-ellipsis"> Settings </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#telegram-notifications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Telegram notifications
-    </span>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#tasks">
+    <span class="md-ellipsis"> Tasks </span>
   </a>
+
+  <!-- Table of contents list -->
   
-</li>
-        
-      </ul>
-    </nav>
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#commands">
+    <span class="md-ellipsis"> Commands </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#logs">
+    <span class="md-ellipsis"> Logs </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#notifiarr-notifications">
+    <span class="md-ellipsis"> Notifiarr notifications </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li>  <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#telegram-notifications">
+    <span class="md-ellipsis"> Telegram notifications </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+</li> 
+    </ul>
+  </nav>
   
 </li>
       
@@ -2167,28 +2275,23 @@
 
   <h1>About</h1>
 
-<center>
-Github:<br>
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch?label=Commits&style=plastic)
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/main?label=Main (:latest)&style=plastic)
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/develop?label=Develop (:develop)&style=plastic)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/notifiarr/dockwatch/develop?label=Last (:develop)&style=plastic)
-![GitHub contributors](https://img.shields.io/github/contributors/notifiarr/dockwatch?label=Contributors&style=plastic)
-
-Support:<br>
-[![Discord](https://img.shields.io/discord/764440599066574859?label=Discord&color=purple&style=plastic)](https://notifiarr.com/discord)
-
-![Logo](assets/logo.png)
-</center>
-
-<h2 id="purpose">Purpose</h2>
+<h4 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch?label=Commits&amp;style=plastic" data-desc-position="bottom"><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch?label=Commits&amp;style=plastic"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/main?label=Main (:latest)&amp;style=plastic" data-desc-position="bottom"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/main?label=Main (:latest)&amp;style=plastic"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/develop?label=Develop (:develop)&amp;style=plastic" data-desc-position="bottom"><img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/notifiarr/dockwatch/develop?label=Develop (:develop)&amp;style=plastic"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://img.shields.io/github/last-commit/notifiarr/dockwatch/develop?label=Last (:develop)&amp;style=plastic" data-desc-position="bottom"><img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/notifiarr/dockwatch/develop?label=Last (:develop)&amp;style=plastic"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://img.shields.io/github/contributors/notifiarr/dockwatch?label=Contributors&amp;style=plastic" data-desc-position="bottom"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/notifiarr/dockwatch?label=Contributors&amp;style=plastic"></a></p>
+<h4 id="support">Support<a class="headerlink" href="#support" title="Permanent link"></a></h4>
+<p><a href="https://notifiarr.com/discord"><img alt="Discord" src="https://img.shields.io/discord/764440599066574859?label=Discord&amp;color=purple&amp;style=plastic"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/logo.png" data-desc-position="bottom"><img alt="Logo" src="assets/logo.png"></a></p>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link"></a></h2>
 <p>Simple UI driven way to manage updates &amp; notifications for Docker containers. No external database is required, all settings are stored locally in an sqlite3 database.</p>
-<h2 id="project-support">Project support</h2>
+<h2 id="project-support">Project support<a class="headerlink" href="#project-support" title="Permanent link"></a></h2>
 <p>If the project is useful for you, do us a favor and smash that star button on the <a href="https://github.com/Notifiarr/dockwatch" target="_blank">Github</a> page! If you want to support the project financially we do appreciate it and you can do that on the <a href="https://github.com/sponsors/Notifiarr" target="_blank">Notifiarr Github</a> sponsor page. Added bonus with that is if you also use <a href="https://notifiarr.com" target="_blank">Notifiarr</a> you can link your Github account and get patron perks there too!</p>
-<h2 id="features-or-bugs">Features or bugs</h2>
+<h2 id="features-or-bugs">Features or bugs<a class="headerlink" href="#features-or-bugs" title="Permanent link"></a></h2>
 <p>If there is a feature you would like added or think you have found a bug, please join the discord and lets discuss it there in real time before doing a Github request. After we determine what to do (add a new feature or confirm the bug) we can move it to Github if necessary although most things can be fixed fast enough that it wont be needed.</p>
-<h2 id="notification-options">Notification options</h2>
-<h3 id="triggers">Triggers</h3>
+<h2 id="notification-options">Notification options<a class="headerlink" href="#notification-options" title="Permanent link"></a></h2>
+<h3 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link"></a></h3>
 <ul>
 <li>Container (re-)created/removed</li>
 <li>Container state changes (running -&gt; stopped or healthy -&gt; unhealthy)</li>
@@ -2197,20 +2300,20 @@ Support:<br>
 <li>Orphan images, volumes &amp; networks are pruned</li>
 <li>Memory and CPU usage is over a set limit</li>
 </ul>
-<h3 id="platforms">Platforms</h3>
+<h3 id="platforms">Platforms<a class="headerlink" href="#platforms" title="Permanent link"></a></h3>
 <ul>
 <li>Mattermost</li>
 <li>Notifiarr</li>
 <li>Telegram</li>
 </ul>
-<h2 id="updating-options">Updating options</h2>
+<h2 id="updating-options">Updating options<a class="headerlink" href="#updating-options" title="Permanent link"></a></h2>
 <p>Updates are applied on a container by container basis and use cron scheduling for flexibility</p>
 <ul>
 <li>Ignore updates</li>
 <li>Check for updates</li>
 <li>Auto update</li>
 </ul>
-<h2 id="other-features">Other features</h2>
+<h2 id="other-features">Other features<a class="headerlink" href="#other-features" title="Permanent link"></a></h2>
 <ul>
 <li>Link and control multiple Dockwatch installs (other servers)</li>
 <li>Automatically locate and match container icons for non Unraid usage*</li>
@@ -2223,55 +2326,55 @@ Support:<br>
 </ul>
 <p>* If icon is available at <a href="https://github.com/Notifiarr/images">Notifiarr/images</a><br>
 ** Also includes generating a docker run command, docker-compose.yml and comparing mounts.</p>
-<h2 id="screenshots">Screenshots</h2>
+<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>These might differ slightly from time to time as the UI can change faster than the wiki might be updated.</p>
 </div>
-<h3 id="interface">Interface</h3>
-<h4 id="servers">Servers</h4>
-<p><img alt="Servers" src="assets/screenshots/interface/servers.png" /></p>
-<h4 id="overview">Overview</h4>
-<p><img alt="Overview" src="assets/screenshots/interface/overview.png" /></p>
-<h4 id="containers">Containers</h4>
-<p><img alt="Containers" src="assets/screenshots/interface/containers.png" /></p>
-<h4 id="container">Container</h4>
-<p><img alt="Container" src="assets/screenshots/interface/container.png" /></p>
-<h4 id="container-compose">Container compose</h4>
-<p><img alt="ContainerCompose" src="assets/screenshots/interface/generate-compose.png" /></p>
-<h4 id="networks">Networks</h4>
-<p><img alt="Networks" src="assets/screenshots/interface/networks.png" /></p>
-<h4 id="compose">Compose</h4>
-<p><img alt="Compose" src="assets/screenshots/interface/compose.png" /></p>
-<h4 id="orphans">Orphans</h4>
-<p><img alt="Orphans" src="assets/screenshots/interface/orphans.png" /></p>
-<h4 id="notifications">Notifications</h4>
-<p><img alt="Notifications" src="assets/screenshots/interface/notifications.png" /></p>
-<h4 id="settings">Settings</h4>
-<p><img alt="Settings" src="assets/screenshots/interface/settings.png" /></p>
-<h4 id="tasks">Tasks</h4>
-<p><img alt="Tasks" src="assets/screenshots/interface/tasks.png" /></p>
-<h4 id="commands">Commands</h4>
-<p><img alt="Commands" src="assets/screenshots/interface/commands.png" /></p>
-<h4 id="logs">Logs</h4>
-<p><img alt="Logs" src="assets/screenshots/interface/logs.png" /></p>
-<h3 id="notifiarr-notifications">Notifiarr notifications</h3>
-<p><img alt="Added" src="assets/screenshots/notifications/notifiarr/added.png" />
-<img alt="Prune" src="assets/screenshots/notifications/notifiarr/prune.png" />
-<img alt="StateChange" src="assets/screenshots/notifications/notifiarr/statechange.png" />
-<img alt="UpdatesApplied" src="assets/screenshots/notifications/notifiarr/updates-applied.png" />
-<img alt="UpdatesAvailable" src="assets/screenshots/notifications/notifiarr/updates-available.png" />
-<img alt="Usage" src="assets/screenshots/notifications/notifiarr/usage.png" /></p>
-<h3 id="telegram-notifications">Telegram notifications</h3>
-<p><img alt="Added" src="assets/screenshots/notifications/telegram/added.png" />
-<img alt="CpuUsage" src="assets/screenshots/notifications/telegram/cpuusage.png" />
-<img alt="Health" src="assets/screenshots/notifications/telegram/health.png" />
-<img alt="MemUsage" src="assets/screenshots/notifications/telegram/memusage.png" />
-<img alt="Prune" src="assets/screenshots/notifications/telegram/prune.png" />
-<img alt="Removed" src="assets/screenshots/notifications/telegram/removed.png" />
-<img alt="StateChange" src="assets/screenshots/notifications/telegram/statechange.png" />
-<img alt="Updated" src="assets/screenshots/notifications/telegram/updated.png" />
-<img alt="Updates" src="assets/screenshots/notifications/telegram/updates.png" /></p>
+<h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link"></a></h3>
+<h4 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/servers.png" data-desc-position="bottom"><img alt="Servers" src="assets/screenshots/interface/servers.png"></a></p>
+<h4 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/overview.png" data-desc-position="bottom"><img alt="Overview" src="assets/screenshots/interface/overview.png"></a></p>
+<h4 id="containers">Containers<a class="headerlink" href="#containers" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/containers.png" data-desc-position="bottom"><img alt="Containers" src="assets/screenshots/interface/containers.png"></a></p>
+<h4 id="container">Container<a class="headerlink" href="#container" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/container.png" data-desc-position="bottom"><img alt="Container" src="assets/screenshots/interface/container.png"></a></p>
+<h4 id="container-compose">Container compose<a class="headerlink" href="#container-compose" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/generate-compose.png" data-desc-position="bottom"><img alt="ContainerCompose" src="assets/screenshots/interface/generate-compose.png"></a></p>
+<h4 id="networks">Networks<a class="headerlink" href="#networks" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/networks.png" data-desc-position="bottom"><img alt="Networks" src="assets/screenshots/interface/networks.png"></a></p>
+<h4 id="compose">Compose<a class="headerlink" href="#compose" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/compose.png" data-desc-position="bottom"><img alt="Compose" src="assets/screenshots/interface/compose.png"></a></p>
+<h4 id="orphans">Orphans<a class="headerlink" href="#orphans" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/orphans.png" data-desc-position="bottom"><img alt="Orphans" src="assets/screenshots/interface/orphans.png"></a></p>
+<h4 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/notifications.png" data-desc-position="bottom"><img alt="Notifications" src="assets/screenshots/interface/notifications.png"></a></p>
+<h4 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/settings.png" data-desc-position="bottom"><img alt="Settings" src="assets/screenshots/interface/settings.png"></a></p>
+<h4 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/tasks.png" data-desc-position="bottom"><img alt="Tasks" src="assets/screenshots/interface/tasks.png"></a></p>
+<h4 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/commands.png" data-desc-position="bottom"><img alt="Commands" src="assets/screenshots/interface/commands.png"></a></p>
+<h4 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link"></a></h4>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/interface/logs.png" data-desc-position="bottom"><img alt="Logs" src="assets/screenshots/interface/logs.png"></a></p>
+<h3 id="notifiarr-notifications">Notifiarr notifications<a class="headerlink" href="#notifiarr-notifications" title="Permanent link"></a></h3>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/added.png" data-desc-position="bottom"><img alt="Added" src="assets/screenshots/notifications/notifiarr/added.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/prune.png" data-desc-position="bottom"><img alt="Prune" src="assets/screenshots/notifications/notifiarr/prune.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/statechange.png" data-desc-position="bottom"><img alt="StateChange" src="assets/screenshots/notifications/notifiarr/statechange.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/updates-applied.png" data-desc-position="bottom"><img alt="UpdatesApplied" src="assets/screenshots/notifications/notifiarr/updates-applied.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/updates-available.png" data-desc-position="bottom"><img alt="UpdatesAvailable" src="assets/screenshots/notifications/notifiarr/updates-available.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/notifiarr/usage.png" data-desc-position="bottom"><img alt="Usage" src="assets/screenshots/notifications/notifiarr/usage.png"></a></p>
+<h3 id="telegram-notifications">Telegram notifications<a class="headerlink" href="#telegram-notifications" title="Permanent link"></a></h3>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/added.png" data-desc-position="bottom"><img alt="Added" src="assets/screenshots/notifications/telegram/added.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/cpuusage.png" data-desc-position="bottom"><img alt="CpuUsage" src="assets/screenshots/notifications/telegram/cpuusage.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/health.png" data-desc-position="bottom"><img alt="Health" src="assets/screenshots/notifications/telegram/health.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/memusage.png" data-desc-position="bottom"><img alt="MemUsage" src="assets/screenshots/notifications/telegram/memusage.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/prune.png" data-desc-position="bottom"><img alt="Prune" src="assets/screenshots/notifications/telegram/prune.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/removed.png" data-desc-position="bottom"><img alt="Removed" src="assets/screenshots/notifications/telegram/removed.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/statechange.png" data-desc-position="bottom"><img alt="StateChange" src="assets/screenshots/notifications/telegram/statechange.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/updated.png" data-desc-position="bottom"><img alt="Updated" src="assets/screenshots/notifications/telegram/updated.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/screenshots/notifications/telegram/updates.png" data-desc-position="bottom"><img alt="Updates" src="assets/screenshots/notifications/telegram/updates.png"></a></p>
 
 
 
@@ -2296,7 +2399,7 @@ Support:<br>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2306,7 +2409,7 @@ Support:<br>
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
         
           
@@ -2321,7 +2424,7 @@ Support:<br>
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2352,11 +2455,13 @@ Support:<br>
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "content.code.copy", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.tracking", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.annotate", "content.tabs.link", "content.code.copy", "content.tooltips", "header.autohide", "announce.dismiss", "navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.instant", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
