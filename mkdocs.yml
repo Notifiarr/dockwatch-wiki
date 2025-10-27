@@ -1,7 +1,7 @@
 site_name: Dockwatch Wiki
 site_author: nitsua
 site_description: Simple UI driven way to manage updates & notifications for Docker containers.
-site_url: http://rm-web-1:8005/en/latest/
+site_url: https://dockwatch.wiki
 repo_name: dockwatch
 repo_url: https://github.com/Notifiarr/dockwatch
 repo_wiki_name: dockwatch-wiki
@@ -21,7 +21,7 @@ nav:
       - Notifications:
         - Notifiarr: pages/notifications/notifiarr.md
         - Telegram: pages/notifications/telegram.md
-      - Settings: 
+      - Settings:
         - General: pages/settings/general.md
         - Logins: pages/settings/logins.md
         - Servers: pages/settings/servers.md
