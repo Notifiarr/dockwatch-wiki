@@ -37,3 +37,16 @@
 		margin-left: calc(var(--permalink-size) * -1 - var(--permalink-spacing)) !important;
 	}
 }
+
+.md-header__title {
+	margin: 0 !important;
+}
+
+.md-header__button.md-logo img {
+  transform: scale(2);
+  transform-origin: center;
+}
+
+.md-header__button.md-logo {
+  overflow: visible;
+}
