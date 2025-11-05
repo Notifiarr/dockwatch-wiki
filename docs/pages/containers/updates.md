@@ -1,23 +1,19 @@
-This modal will allow you to pick and choose which container updates when and its update settings
+Use this modal to select which containers update, schedule when they update, and configure their update settings.
 
 !!! info
-    You have the option to set them in mass or container by container as well
+    You can apply settings to multiple containers at once or configure each container individually.
 
 ## Update
 
-Pick the update option you want
+Configure how updates are handled for each container:
 
-- `Ignore`: This will not check for updates or try to update the container at all
-- `Check for updates`: This uses regctl to check for changes in the container and can alert you when an update is available but will not update the container
-- `Auto update`: This will use regctl to check for a change and pull the changes as needed to automatically update the container and alert you when this happens
-
+- `Ignore` — do not check or apply updates for this container.
+- `Check for updates` — check for available updates but do not apply them automatically.
+- `Auto update` — apply updates automatically.
 ## Frequency
 
-This is how often you want to do the update option (assuming you did not pick Ignore) and uses the standard cron frequency. There is a limitation to the minute selection to try and mitigate repositories being overloaded/abused for excessive update checking.
-
-When you click on the frequency box you will get a popup to help pick the frequency you want for those who are not familiar with cron expression formats.
-
-Here is how to understand cron frequency and Google provides a lot of infomration about this as well
+Configure how often the container update mechanism runs for each container.  
+Dockwatch uses the power of cron for this. Below you can find an example on how cron works.  
 
 ```
 * * * * * command to be executed
@@ -30,14 +26,18 @@ Here is how to understand cron frequency and Google provides a lot of infomratio
 +————- min (0 – 59)
 ```
 
+## Minimum Age
+
+You can set a minimum image age (the minimum time since an image was published) before an update becomes eligible to be applied.
+
 ## Mass changes
 
-At the bottom is a drop down for picking the update option and a frequency selection box that can be used to apply to multiple/all containers at once.
+At the bottom, use the dropdown to choose an update action and the frequency selector to apply that choice to selected containers or to all containers at once.
 
 ### All
 
-After you pick the drop down option you want and the frequency, click the `double up arrow` next to each one and it will apply that choice to all the containers
+After selecting the desired action and frequency from the dropdown, click the `double up arrow` to apply the choice to all containers.
 
 ### Selective
 
-After you pick the drop down option you want and the frequency, click the `single up arrow` next to each one and it will apply that choice to only the containers you have checked the box for
+After choosing the action and frequency, click the `single up arrow` beside each container to apply that choice only to the containers you have selected.

@@ -1,5 +1,5 @@
 !!! info
-    Make sure you change the volumes, ports, etc to match your system
+    Adjust the volumes, port mappings, and environment variables (including PUID/PGID and TZ) to match the paths, ports, and user/group IDs on your host system.
 
 ## Environment variables
 
@@ -18,14 +18,17 @@
 
 ### Variables
 
+!!! info
+    `DOCKER_HOST` only needs to be set when connecting via a [socket proxy](/pages/misc/proxy).
+
 | Name | Key | Value |
 | ----- | ----- | ----- |
-| DOCKER_HOST (optional: only for socket proxy) | DOCKER_HOST | ip:port |
+| DOCKER_HOST | DOCKER_HOST | ip:port |
 | PUID | PUID | 1001 |
 | PGID | PGID | 999 |
 | TZ | TZ | America/New_York |
 
-## Run
+## Docker Run
 
 ```
 docker run \
@@ -42,7 +45,7 @@ docker run \
   "ghcr.io/notifiarr/dockwatch:main"
 ```
 
-## Compose
+## Docker Compose
 
 ```
 services:
@@ -53,7 +56,7 @@ services:
     ports:
       - 9999:80/tcp
     environment:
-      #-DOCKER_HOST=127.0.0.1:2375 # Uncomment and adjust accordingly if you use a socket proxy
+      # - DOCKER_HOST=127.0.0.1:2375 # Uncomment and adjust accordingly if you use a socket proxy
       - PUID=1001
       - PGID=999
       - TZ=America/New_York
@@ -64,6 +67,16 @@ services:
 
 ## Repository
 
-`ghcr.io/notifiarr/dockwatch:main` Safest option, recommended branch to use<br>
-`ghcr.io/notifiarr/dockwatch:develop` Typically safe<br>
-`ghcr.io/notifiarr/dockwatch:nightly` Typically only used for large major changes that need testing prior to develop<br>
+| Repository | Use-case |
+| ----- | ----- |
+| ghcr.io/notifiarr/dockwatch:main | Recommended branch to use |
+| ghcr.io/notifiarr/dockwatch:develop | Typically safe — may include occasional bugs or unfinished changes |
+| ghcr.io/notifiarr/dockwatch:nightly | Only used for major changes that require further testing |
+
+## Reverse Proxy
+
+Dockwatch can run behind a reverse proxy (for example, [sample Nginx config](https://github.com/Notifiarr/dockwatch/blob/develop/docker/nginx.conf)).  
+Set Dockwatch Base URL in the Web UI settings to the path used by the proxy (for example `/dockwatch`). 
+
+!!! warning
+    If you cannot access the Web UI, create a file named `base-url.txt` in the app config directory containing the desired path (for example `/dockwatch`). Restart the container after changing the Base URL (via the UI or the file) to apply the setting.

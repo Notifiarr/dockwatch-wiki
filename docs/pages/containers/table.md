@@ -1,14 +1,16 @@
-The containers table is pretty straight forward but we will cover some of the "not so obvious" things
+The containers table is straightforward.
 
 ## Column visibility
 
-Self explanatory but you can pick which columns you do or do not want to see
+Select which columns to display — toggle any column on or off to customize the table view.
 
-## Container table
+## Search
 
-- `Real time updates`: This will auto reload the table rows every 60 seconds if the SSE task is enabled
-- `Search`: Filter out rows in the table
-- `With selected`: This will apply the selected change to all checked containers at once
+Search containers by name — enter a full or partial name to filter the table.
+
+## Real time updates (SSE)
+
+Auto refresh the table rows every 60 seconds, if the SSE task is enabled.
 
 ### Columns
 

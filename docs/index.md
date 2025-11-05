@@ -12,22 +12,23 @@
 
 ## Purpose
 
-Simple UI driven way to manage updates & notifications for Docker containers. No external database is required, all settings are stored locally in an sqlite3 database.
+Simple UI driven way to manage updates & notifications for Docker containers.  
 
 ## Project support
 
-If the project is useful for you, do us a favor and smash that star button on the [Github](https://github.com/Notifiarr/dockwatch){:target="_blank"} page! If you want to support the project financially we do appreciate it and you can do that on the [Notifiarr Github](https://github.com/sponsors/Notifiarr){:target="_blank"} sponsor page. Added bonus with that is if you also use [Notifiarr](https://notifiarr.com){:target="_blank"} you can link your Github account and get patron perks there too!
+If the project is useful for you, do us a favor and star this project on our [GitHub](https://github.com/Notifiarr/dockwatch){:target="_blank"} page!  
+If you'd like to support the project financially, consider sponsoring us on the [Notifiarr Sponsors](https://github.com/sponsors/Notifiarr){:target="_blank"} page. If you use [Notifiarr](https://notifiarr.com){:target="_blank"} and link your GitHub account, you'll also receive patron perks there.
 
 ## Features or bugs
 
-If there is a feature you would like added or think you have found a bug, please join the discord and lets discuss it there in real time before doing a Github request. After we determine what to do (add a new feature or confirm the bug) we can move it to Github if necessary although most things can be fixed fast enough that it wont be needed.
+Have a bug or feature request? Join our [Discord](https://notifiarr.com/discord){:target="_blank"} and discuss it there in real time before opening a GitHub issue. We'll confirm the report or refine the request, and only move it to GitHub if necessary — many issues can be resolved quickly without creating one.
 
 ## Notification options
 
 ### Triggers
 
 - Container (re-)created/removed
-- Container state changes (running -> stopped or healthy -> unhealthy)
+- Container state changes (running ⇾ stopped — healthy ⇾ unhealthy)
 - Update for container image tag is available
 - Update for container image tag has been applied
 - Orphan images, volumes & networks are pruned
@@ -41,7 +42,7 @@ If there is a feature you would like added or think you have found a bug, please
 
 ## Updating options
 
-Updates are applied on a container by container basis and use cron scheduling for flexibility
+Updates are applied on a container by container basis and use cron scheduling for flexibility.
 
 - Ignore updates
 - Check for updates
@@ -50,21 +51,23 @@ Updates are applied on a container by container basis and use cron scheduling fo
 ## Other features
 
 - Link and control multiple Dockwatch installs (other servers)
-- Automatically locate and match container icons for non Unraid usage*
+- Automatically locate and match container icons for non Unraid usage¹
 - Update schedules for container image tags by a container basis
 - Notifications by a container basis
 - Automatically try to restart unhealthy containers
 - Mass prune orphan images, volumes & networks
-- Mass actions for containers [(re-)start/stop, pull, update]**
+- Mass actions for containers [(re-)start/stop, pull, update]²
 - Group containers in a table view for easier management
+- Interactive shell support through Web UI
+- Send shell commands on a cron schedule by a container basis 
 
-\* If icon is available at [Notifiarr/images](https://github.com/Notifiarr/images)<br>
-** Also includes generating a docker run command, docker-compose.yml and comparing mounts.
+¹ If icon is available at [Notifiarr/images](https://github.com/Notifiarr/images)<br>
+² Also includes generating a docker run command, docker-compose.yml and comparing mounts.
 
 ## Screenshots
 
 !!! note
-    These might differ slightly from time to time as the UI can change faster than the wiki might be updated.
+    UI and screenshots may change over time; visuals and labels here might differ slightly from the current app.
 
 ### Interface
 

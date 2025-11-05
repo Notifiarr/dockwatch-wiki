@@ -1,14 +1,14 @@
 ## Docker
 
-- Docker v25 or later
-- Docker compose v2.27 or later
+- Docker Version 25+
+- Docker Compose Version 2.27+ (optional)
 
 ## Permissions
 
 !!! info
-    Dockwatch needs to be able to run docker based commands in order to function so this is important, alternative to Dockwatch using the docker.sock is if you use a [Socket proxy](/pages/misc/proxy)
+    Dockwatch must be able to run Docker commands to function. This typically requires access to the Docker socket (docker.sock); alternatively, you can use a [socket proxy](/pages/misc/proxy).
 
-Get the group id that docker uses with the following command
+Get the group id that Docker uses with the following command:
 
 ```
 grep docker /etc/group

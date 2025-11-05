@@ -1,10 +1,10 @@
 !!! warning
-    This feature is still a work in progress on everything it will be able to do
+    This feature is a work in progress and not yet fully implemented.
 
 ## Current usage
 
-Currently you can store compose files locally with Dockwatch so that you can pull or create stacks from the interface instead of having to use the shell for everything
+Dockwatch can store Docker Compose files locally, allowing you to pull or create stacks from the UI instead of using the shell.
 
 ## Future usage
 
-In the future there are plans to make Dockwatch much smarter about how it can utilize compose files. This will allow it to properly pull and create conainers via the compose mechanism instead of the docker api
+Planned improvements will let Dockwatch use Compose files more intelligently, enabling it to pull and create containers via the Compose workflow rather than directly through the Docker API.
