@@ -347,13 +347,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../logins/" class="md-tabs__link">
+      <a href="../composeRun/" class="md-tabs__link">
         
   
   
     
   
-  Logins
+  Compose/Run
 
       </a>
     </li>
@@ -366,13 +366,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../composeRun/" class="md-tabs__link">
+      <a href="../logins/" class="md-tabs__link">
         
   
   
     
   
-  Compose/Run
+  Logins
 
       </a>
     </li>
@@ -1349,12 +1349,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../logins/" class="md-nav__link">
+      <a href="../composeRun/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Logins
+    Compose/Run
     
   </span>
   
@@ -1371,12 +1371,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../composeRun/" class="md-nav__link">
+      <a href="../logins/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Compose/Run
+    Logins
     
   </span>
   
@@ -1616,14 +1616,14 @@
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Make sure the socket proxy runs on the same network as Dockwatch</p>
+<p>Make sure the socket proxy runs on the same network as Dockwatch.</p>
 </div>
 <p>Dockwatch is compatible with a Socket proxy &amp; tested with:</p>
 <ul>
 <li>LSIO</li>
 <li>Tecnativa</li>
 </ul>
-<p>You need to enable the following (possibly more based on the version, future added permissions to the proxy, etc):</p>
+<p>Enable at least the following proxy permissions (additional permissions may be required depending on the proxy version or future updates):</p>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALLOW_START=1</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALLOW_STOP=1</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALLOW_RESTARTS=1</span>
@@ -1634,7 +1634,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POST=1</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VOLUMES=1</span>
 </code></pre></div>
-<p>You also need to make sure and use the <code>DOCKER_HOST</code> variable (--env or compose environment) with the example value <code>http://socket-proxy:2375</code> (this points to your socket-proxy container)</p>
+<p>You also need to make sure and use the <a href="/pages/misc/composeRun/#variables"><code>DOCKER_HOST</code> variable</a>.</p>
 
 
 

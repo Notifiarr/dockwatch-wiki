@@ -84,11 +84,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#option-1" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -350,13 +345,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../logins/" class="md-tabs__link">
+      <a href="../composeRun/" class="md-tabs__link">
         
   
   
     
   
-  Logins
+  Compose/Run
 
       </a>
     </li>
@@ -369,13 +364,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../composeRun/" class="md-tabs__link">
+      <a href="../logins/" class="md-tabs__link">
         
   
   
     
   
-  Compose/Run
+  Logins
 
       </a>
     </li>
@@ -1352,12 +1347,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../logins/" class="md-nav__link">
+      <a href="../composeRun/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Logins
+    Compose/Run
     
   </span>
   
@@ -1374,12 +1369,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../composeRun/" class="md-nav__link">
+      <a href="../logins/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Compose/Run
+    Logins
     
   </span>
   
@@ -1564,19 +1559,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Contributing
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1588,47 +1570,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
-
-<!-- Table of contents item -->
-<li class="md-nav__item">
-  <a class="md-nav__link" href="#option-1">
-    <span class="md-ellipsis"> Option 1 </span>
-  </a>
-
-  <!-- Table of contents list -->
-  
-</li>
-      
-        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
-
-<!-- Table of contents item -->
-<li class="md-nav__item">
-  <a class="md-nav__link" href="#option-2">
-    <span class="md-ellipsis"> Option 2 </span>
-  </a>
-
-  <!-- Table of contents list -->
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1652,38 +1593,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
-
-<!-- Table of contents item -->
-<li class="md-nav__item">
-  <a class="md-nav__link" href="#option-1">
-    <span class="md-ellipsis"> Option 1 </span>
-  </a>
-
-  <!-- Table of contents list -->
-  
-</li>
-      
-        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
-
-<!-- Table of contents item -->
-<li class="md-nav__item">
-  <a class="md-nav__link" href="#option-2">
-    <span class="md-ellipsis"> Option 2 </span>
-  </a>
-
-  <!-- Table of contents list -->
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1703,24 +1612,21 @@
 
   <h1>Contributing</h1>
 
-<h2 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link"></a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Tested on Debian 13.<br>
+If you're running Windows, please <a href="https://github.com/Notifiarr/dockwatch-wiki/issues/new">open an issue</a> so we can add Windows-specific instructions.</p>
+</div>
 <ul>
-<li>Fork the repo</li>
-<li>Create a directory symlink of the forked repo to /config/www.</li>
-<li>Linux example: ln -s /home/user/dockwatch-git /home/user/config/www</li>
-<li>Windows example: mklink /D "C:\dockwatch-git" "C:\dockwatch-config\www"</li>
-<li>Open the UI, Navigate to Settings-&gt;Development and set environment from Internal to External</li>
-<li>Save and restart Dockwatch container</li>
+<li>Fork the <a href="https://github.com/Notifiarr/dockwatch">repository</a> and change directory with <code>cd dockwatch</code></li>
+<li>Switch to <code>develop</code> branch with <code>git checkout develop</code></li>
+<li>Run <code>sh docker/build.sh</code> ⇾ This will build a local image for Dockwatch</li>
+<li>You can now run this image with <code>docker compose -f docker/compose.yml up -d</code></li>
 </ul>
-<h2 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link"></a></h2>
-<ul>
-<li>Fork the repo</li>
-<li>Open the Dockerfile and comment out the COPY root/ / line at the bottom</li>
-<li>Copy the files from root/app/www/public/* to /config/www/*</li>
-<li>Copy the cron from root/etc/crontabs/abc to /config/crontabs/abc (You'll need to add an ENV variable for DOCKER_MODS=linuxserver/mods:universal-cron)</li>
-<li>Copy the ini from root/etc/php82/conf.d/dockwatch.ini to /config/php/php-local.ini</li>
-<li>This should allow you to run the container while making changes to the files in /config and when done, just copy the files back into the root/ directories and push your fork so it builds a new container</li>
-</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you're using a Linux distribution other than Ubuntu/Debian, update the <code>PUID</code> and <code>PGID</code> values in <code>docker/compose.yml</code> to match your user and group IDs. By default they are <code>PUID=1000</code> and <code>PGID=990</code>.</p>
+</div>
 
 
 

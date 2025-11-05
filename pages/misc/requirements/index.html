@@ -15,7 +15,7 @@
         <link rel="prev" href="../../logs/">
       
       
-        <link rel="next" href="../logins/">
+        <link rel="next" href="../composeRun/">
       
       
       <link rel="icon" href="../../../assets/favicon.png">
@@ -354,13 +354,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../logins/" class="md-tabs__link">
+      <a href="../composeRun/" class="md-tabs__link">
         
   
   
     
   
-  Logins
+  Compose/Run
 
       </a>
     </li>
@@ -373,13 +373,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../composeRun/" class="md-tabs__link">
+      <a href="../logins/" class="md-tabs__link">
         
   
   
     
   
-  Compose/Run
+  Logins
 
       </a>
     </li>
@@ -1416,12 +1416,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../logins/" class="md-nav__link">
+      <a href="../composeRun/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Logins
+    Compose/Run
     
   </span>
   
@@ -1438,12 +1438,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../composeRun/" class="md-nav__link">
+      <a href="../logins/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Compose/Run
+    Logins
     
   </span>
   
@@ -1707,15 +1707,15 @@
 
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link"></a></h2>
 <ul>
-<li>Docker v25 or later</li>
-<li>Docker compose v2.27 or later</li>
+<li>Docker Version 25+</li>
+<li>Docker Compose Version 2.27+ (optional)</li>
 </ul>
 <h2 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Dockwatch needs to be able to run docker based commands in order to function so this is important, alternative to Dockwatch using the docker.sock is if you use a <a href="/pages/misc/proxy">Socket proxy</a></p>
+<p>Dockwatch must be able to run Docker commands to function. This typically requires access to the Docker socket (docker.sock); alternatively, you can use a <a href="/pages/misc/proxy">socket proxy</a>.</p>
 </div>
-<p>Get the group id that docker uses with the following command</p>
+<p>Get the group id that Docker uses with the following command:</p>
 <div class="highlight"><pre><span></span><code>grep docker /etc/group
 </code></pre></div>
 <p>Get the user id from the user you want to run Dockwatch as with the following command:</p>
@@ -1775,13 +1775,13 @@
         
         
           
-          <a href="../logins/" class="md-footer__link md-footer__link--next" aria-label="Next: Logins">
+          <a href="../composeRun/" class="md-footer__link md-footer__link--next" aria-label="Next: Compose/Run">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Logins
+                Compose/Run
               </div>
             </div>
             <div class="md-footer__button md-icon">

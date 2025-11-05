@@ -352,13 +352,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="pages/misc/logins/" class="md-tabs__link">
+      <a href="pages/misc/composeRun/" class="md-tabs__link">
         
   
   
     
   
-  Logins
+  Compose/Run
 
       </a>
     </li>
@@ -371,13 +371,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="pages/misc/composeRun/" class="md-tabs__link">
+      <a href="pages/misc/logins/" class="md-tabs__link">
         
   
   
     
   
-  Compose/Run
+  Logins
 
       </a>
     </li>
@@ -1680,12 +1680,12 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/misc/logins/" class="md-nav__link">
+      <a href="pages/misc/composeRun/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Logins
+    Compose/Run
     
   </span>
   
@@ -1702,12 +1702,12 @@
   
   
     <li class="md-nav__item">
-      <a href="pages/misc/composeRun/" class="md-nav__link">
+      <a href="pages/misc/logins/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Compose/Run
+    Logins
     
   </span>
   
@@ -2237,16 +2237,17 @@
 <p><a href="https://notifiarr.com/discord"><img alt="Discord" src="https://img.shields.io/discord/764440599066574859?label=Discord&amp;color=purple&amp;style=plastic"></a></p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="assets/logo.png" data-desc-position="bottom"><img alt="Logo" src="assets/logo.png"></a></p>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link"></a></h2>
-<p>Simple UI driven way to manage updates &amp; notifications for Docker containers. No external database is required, all settings are stored locally in an sqlite3 database.</p>
+<p>Simple UI driven way to manage updates &amp; notifications for Docker containers.  </p>
 <h2 id="project-support">Project support<a class="headerlink" href="#project-support" title="Permanent link"></a></h2>
-<p>If the project is useful for you, do us a favor and smash that star button on the <a href="https://github.com/Notifiarr/dockwatch" target="_blank">Github</a> page! If you want to support the project financially we do appreciate it and you can do that on the <a href="https://github.com/sponsors/Notifiarr" target="_blank">Notifiarr Github</a> sponsor page. Added bonus with that is if you also use <a href="https://notifiarr.com" target="_blank">Notifiarr</a> you can link your Github account and get patron perks there too!</p>
+<p>If the project is useful for you, do us a favor and star this project on our <a href="https://github.com/Notifiarr/dockwatch" target="_blank">GitHub</a> page!<br>
+If you'd like to support the project financially, consider sponsoring us on the <a href="https://github.com/sponsors/Notifiarr" target="_blank">Notifiarr Sponsors</a> page. If you use <a href="https://notifiarr.com" target="_blank">Notifiarr</a> and link your GitHub account, you'll also receive patron perks there.</p>
 <h2 id="features-or-bugs">Features or bugs<a class="headerlink" href="#features-or-bugs" title="Permanent link"></a></h2>
-<p>If there is a feature you would like added or think you have found a bug, please join the discord and lets discuss it there in real time before doing a Github request. After we determine what to do (add a new feature or confirm the bug) we can move it to Github if necessary although most things can be fixed fast enough that it wont be needed.</p>
+<p>Have a bug or feature request? Join our <a href="https://notifiarr.com/discord" target="_blank">Discord</a> and discuss it there in real time before opening a GitHub issue. We'll confirm the report or refine the request, and only move it to GitHub if necessary — many issues can be resolved quickly without creating one.</p>
 <h2 id="notification-options">Notification options<a class="headerlink" href="#notification-options" title="Permanent link"></a></h2>
 <h3 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link"></a></h3>
 <ul>
 <li>Container (re-)created/removed</li>
-<li>Container state changes (running -&gt; stopped or healthy -&gt; unhealthy)</li>
+<li>Container state changes (running ⇾ stopped — healthy ⇾ unhealthy)</li>
 <li>Update for container image tag is available</li>
 <li>Update for container image tag has been applied</li>
 <li>Orphan images, volumes &amp; networks are pruned</li>
@@ -2259,7 +2260,7 @@
 <li>Telegram</li>
 </ul>
 <h2 id="updating-options">Updating options<a class="headerlink" href="#updating-options" title="Permanent link"></a></h2>
-<p>Updates are applied on a container by container basis and use cron scheduling for flexibility</p>
+<p>Updates are applied on a container by container basis and use cron scheduling for flexibility.</p>
 <ul>
 <li>Ignore updates</li>
 <li>Check for updates</li>
@@ -2268,20 +2269,22 @@
 <h2 id="other-features">Other features<a class="headerlink" href="#other-features" title="Permanent link"></a></h2>
 <ul>
 <li>Link and control multiple Dockwatch installs (other servers)</li>
-<li>Automatically locate and match container icons for non Unraid usage*</li>
+<li>Automatically locate and match container icons for non Unraid usage¹</li>
 <li>Update schedules for container image tags by a container basis</li>
 <li>Notifications by a container basis</li>
 <li>Automatically try to restart unhealthy containers</li>
 <li>Mass prune orphan images, volumes &amp; networks</li>
-<li>Mass actions for containers [(re-)start/stop, pull, update]**</li>
+<li>Mass actions for containers [(re-)start/stop, pull, update]²</li>
 <li>Group containers in a table view for easier management</li>
+<li>Interactive shell support through Web UI</li>
+<li>Send shell commands on a cron schedule by a container basis </li>
 </ul>
-<p>* If icon is available at <a href="https://github.com/Notifiarr/images">Notifiarr/images</a><br>
-** Also includes generating a docker run command, docker-compose.yml and comparing mounts.</p>
+<p>¹ If icon is available at <a href="https://github.com/Notifiarr/images">Notifiarr/images</a><br>
+² Also includes generating a docker run command, docker-compose.yml and comparing mounts.</p>
 <h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>These might differ slightly from time to time as the UI can change faster than the wiki might be updated.</p>
+<p>UI and screenshots may change over time; visuals and labels here might differ slightly from the current app.</p>
 </div>
 <h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link"></a></h3>
 <h4 id="servers">Servers<a class="headerlink" href="#servers" title="Permanent link"></a></h4>

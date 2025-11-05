@@ -354,13 +354,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../misc/logins/" class="md-tabs__link">
+      <a href="../../misc/composeRun/" class="md-tabs__link">
         
   
   
     
   
-  Logins
+  Compose/Run
 
       </a>
     </li>
@@ -373,13 +373,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../misc/composeRun/" class="md-tabs__link">
+      <a href="../../misc/logins/" class="md-tabs__link">
         
   
   
     
   
-  Compose/Run
+  Logins
 
       </a>
     </li>
@@ -843,13 +843,25 @@
 
 <!-- Table of contents item -->
 <li class="md-nav__item">
-  <a class="md-nav__link" href="#container-table">
-    <span class="md-ellipsis"> Container table </span>
+  <a class="md-nav__link" href="#search">
+    <span class="md-ellipsis"> Search </span>
   </a>
 
   <!-- Table of contents list -->
   
-  <nav class="md-nav" aria-label="Container table">
+</li>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#real-time-updates-sse">
+    <span class="md-ellipsis"> Real time updates (SSE) </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+  <nav class="md-nav" aria-label="Real time updates (SSE)">
     <ul class="md-nav__list">
        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
 
@@ -1444,12 +1456,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/logins/" class="md-nav__link">
+      <a href="../../misc/composeRun/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Logins
+    Compose/Run
     
   </span>
   
@@ -1466,12 +1478,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/composeRun/" class="md-nav__link">
+      <a href="../../misc/logins/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Compose/Run
+    Logins
     
   </span>
   
@@ -1704,13 +1716,25 @@
 
 <!-- Table of contents item -->
 <li class="md-nav__item">
-  <a class="md-nav__link" href="#container-table">
-    <span class="md-ellipsis"> Container table </span>
+  <a class="md-nav__link" href="#search">
+    <span class="md-ellipsis"> Search </span>
   </a>
 
   <!-- Table of contents list -->
   
-  <nav class="md-nav" aria-label="Container table">
+</li>
+      
+        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
+
+<!-- Table of contents item -->
+<li class="md-nav__item">
+  <a class="md-nav__link" href="#real-time-updates-sse">
+    <span class="md-ellipsis"> Real time updates (SSE) </span>
+  </a>
+
+  <!-- Table of contents list -->
+  
+  <nav class="md-nav" aria-label="Real time updates (SSE)">
     <ul class="md-nav__list">
        <!-- Source: https://github.com/squidfunk/mkdocs-material/issues/4827#issuecomment-2792866850 -->
 
@@ -1749,15 +1773,13 @@
 
   <h1>Table</h1>
 
-<p>The containers table is pretty straight forward but we will cover some of the "not so obvious" things</p>
+<p>The containers table is straightforward.</p>
 <h2 id="column-visibility">Column visibility<a class="headerlink" href="#column-visibility" title="Permanent link"></a></h2>
-<p>Self explanatory but you can pick which columns you do or do not want to see</p>
-<h2 id="container-table">Container table<a class="headerlink" href="#container-table" title="Permanent link"></a></h2>
-<ul>
-<li><code>Real time updates</code>: This will auto reload the table rows every 60 seconds if the SSE task is enabled</li>
-<li><code>Search</code>: Filter out rows in the table</li>
-<li><code>With selected</code>: This will apply the selected change to all checked containers at once</li>
-</ul>
+<p>Select which columns to display — toggle any column on or off to customize the table view.</p>
+<h2 id="search">Search<a class="headerlink" href="#search" title="Permanent link"></a></h2>
+<p>Search containers by name — enter a full or partial name to filter the table.</p>
+<h2 id="real-time-updates-sse">Real time updates (SSE)<a class="headerlink" href="#real-time-updates-sse" title="Permanent link"></a></h2>
+<p>Auto refresh the table rows every 60 seconds, if the SSE task is enabled.</p>
 <h3 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link"></a></h3>
 <p>If you utilize groups, they are listed first in the table and you click on the group name to show the container information for the group</p>
 <p><code>Name</code>: Click on a container to get a menu, from that menu you can make container specific changes and see some information about the container such as its network, labels, environment variables, etc. Under the container name is the repository for that container. <em>NOTE</em> Editing containers will show the interface but does not have a save button yet as it is still a WIP</p>
