@@ -2106,7 +2106,8 @@
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link"></a></h3>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p><code>DOCKER_HOST</code> only needs to be set when connecting via a <a href="/pages/misc/proxy">socket proxy</a>.</p>
+<p><code>DOCKER_HOST</code> only needs to be set when connecting via a <a href="/pages/misc/proxy">socket proxy</a>.
+You can find the minimum API version value for <code>DOCKER_API_VERSION</code> by running <code>/usr/bin/docker version | grep -oP '(?&lt;=minimum version )[\d.]+'</code> on your host. This is only needed if you have a Docker service installed that is older than version 29.</p>
 </div>
 <table>
 <thead>
@@ -2121,6 +2122,11 @@
 <td>DOCKER_HOST</td>
 <td>DOCKER_HOST</td>
 <td>ip:port</td>
+</tr>
+<tr>
+<td>DOCKER_API_VERSION</td>
+<td>DOCKER_API_VERSION</td>
+<td>1.44</td>
 </tr>
 <tr>
 <td>PUID</td>

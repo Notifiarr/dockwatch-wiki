@@ -1922,6 +1922,10 @@
 <li>Docker Version 25+</li>
 <li>Docker Compose Version 2.27+ (optional)</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Starting with version <a href="https://github.com/Notifiarr/dockwatch/commit/3c5c037d2d75df261efdaf7a2b87e801ee3775e2">v0.6.472</a>, the internal Docker service has been updated to version 29. This means that if your host has a Docker service older than version 29 installed, you must add an extra <a href="/pages/misc/composeRun/#variables">environment variable</a> to ensure that Dockwatch can connect to the host.</p>
+</div>
 <h2 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
