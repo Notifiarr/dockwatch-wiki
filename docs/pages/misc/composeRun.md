@@ -20,10 +20,13 @@
 
 !!! info
     `DOCKER_HOST` only needs to be set when connecting via a [socket proxy](/pages/misc/proxy).
+    You can find the minimum API version value for `DOCKER_API_VERSION` by running `/usr/bin/docker version | grep -oP '(?<=minimum version )[\d.]+'` on your host. This is only needed if you have a Docker service installed that is older than version 29.
+
 
 | Name | Key | Value |
 | ----- | ----- | ----- |
 | DOCKER_HOST | DOCKER_HOST | ip:port |
+| DOCKER_API_VERSION | DOCKER_API_VERSION | 1.44 |
 | PUID | PUID | 1001 |
 | PGID | PGID | 999 |
 | TZ | TZ | America/New_York |
