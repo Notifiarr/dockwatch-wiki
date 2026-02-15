@@ -29,6 +29,7 @@
 | ----- | ----- | ----- |
 | DOCKER_HOST | DOCKER_HOST | ip:port |
 | DOCKER_API_VERSION | DOCKER_API_VERSION | 1.44 |
+| DISABLE_IPV6 | DISABLE_IPV6 | 1 |
 | PUID | PUID | 1001 |
 | PGID | PGID | 999 |
 | TZ | TZ | America/New_York |
