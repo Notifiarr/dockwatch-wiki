@@ -19,7 +19,7 @@ jobs:
       - name: Setup Python environment
         uses: actions/setup-python@v6
         with:
-          python-version: "3.14"
+          python-version: "3.15"
 
       - name: Upgrade pip
         run: python3 -m pip install --upgrade pip
